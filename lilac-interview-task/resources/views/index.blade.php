@@ -53,8 +53,8 @@
                 data: {
                     query: query
                 },
-                sucess: function(response) {
-                    console.log('hi from server')
+                success: function(response) {
+                    console.log(response)
                 },
                 error: function(status, error) {
                     console.log(error)

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "John Doe",
+        "designation_id": 1,
+        "department_id": 3,
+        "phone_number": "1234567890"
+    },
+    {
+        "name": "Jane Smith",
+        "designation_id": 2,
+        "department_id": 3,
+        "phone_number": "9876543210"
+    },
+    {
+        "name": "Robert Brown",
+        "designation_id": 4,
+        "department_id": 2,
+        "phone_number": "4561237890"
+    },
+    {
+        "name": "Emily Davis",
+        "designation_id": 5,
+        "department_id": 1,
+        "phone_number": "3216549870"
+    },
+    {
+        "name": "Michael Wilson",
+        "designation_id": 3,
+        "department_id": 4,
+        "phone_number": "7890123456"
+    }
+]
