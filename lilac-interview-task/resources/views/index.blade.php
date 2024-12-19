@@ -14,26 +14,16 @@
                 <input type="text" class="search-input" placeholder="Search Name/Designation/Department">
             </div>
             <div class="box-container">
-                <div class="box">
-                    <h2>John Doe</h2>
-                    <h3>Marketing Manager</h3>
-                    <h4>Sales and marketing</h4>
-                </div>
-                <div class="box">
-                    <h2>John Doe</h2>
-                    <h3>Marketing Manager</h3>
-                    <h4>Sales and marketing</h4>
-                </div>
-                <div class="box">
-                    <h2>John Doe</h2>
-                    <h3>Marketing Manager</h3>
-                    <h4>Sales and marketing</h4>
-                </div>
-                <div class="box">
-                    <h2>John Doe</h2>
-                    <h3>Marketing Manager</h3>
-                    <h4>Sales and marketing</h4>
-                </div>
+                @forelse ($datas as $data)
+                    <div class="box">
+                        <h2>{{ $data->name }}</h2>
+                        <h3>{{ $data->designation->name }}</h3>
+                        <h4>{{ $data->department->name }}</h4>
+                    </div>
+                @empty
+
+                @endforelse
+
             </div>
         </div>
     </div>
@@ -53,8 +43,27 @@
                 data: {
                     query: query
                 },
-                success: function(response) {
-                    console.log(response)
+                success: function(r) {
+
+                    $('.box-container').empty();
+
+                    if (r.length > 0) {
+                        r.forEach(function(a) {
+                            let boxHtml = `
+                            <div class="box">
+                                <h2>${a.name}</h2>
+                                <h3>${a.designation.name}</h3>
+                                <h4>${a.department.name}</h4>
+                            </div>
+                        `;
+                            $('.box-container').append(
+                                boxHtml);
+                        });
+                    } else {
+                        $('.box-container').html(
+                            '<label for="search-input" class="search-label">Try something else.</label>'
+                        );
+                    }
                 },
                 error: function(status, error) {
                     console.log(error)

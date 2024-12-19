@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\SearchController;
+use App\Models\User;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/search', function () {
-    return response('hi');
+Route::group(['controller' => SearchController::class], function () {
+    Route::get('/', 'getAllUsers');
+    Route::get('/search', 'searchByUserDesignationDepartment');
 });

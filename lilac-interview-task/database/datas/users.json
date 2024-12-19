@@ -28,5 +28,95 @@
         "designation_id": 3,
         "department_id": 4,
         "phone_number": "7890123456"
+    },
+    {
+        "name": "Sarah Johnson",
+        "designation_id": 1,
+        "department_id": 2,
+        "phone_number": "2345678901"
+    },
+    {
+        "name": "David Martinez",
+        "designation_id": 2,
+        "department_id": 4,
+        "phone_number": "3456789012"
+    },
+    {
+        "name": "Linda Taylor",
+        "designation_id": 3,
+        "department_id": 1,
+        "phone_number": "4567890123"
+    },
+    {
+        "name": "James Moore",
+        "designation_id": 4,
+        "department_id": 5,
+        "phone_number": "5678901234"
+    },
+    {
+        "name": "Mary Anderson",
+        "designation_id": 5,
+        "department_id": 3,
+        "phone_number": "6789012345"
+    },
+    {
+        "name": "William Thomas",
+        "designation_id": 2,
+        "department_id": 2,
+        "phone_number": "7890123456"
+    },
+    {
+        "name": "Patricia Jackson",
+        "designation_id": 1,
+        "department_id": 4,
+        "phone_number": "8901234567"
+    },
+    {
+        "name": "Joseph White",
+        "designation_id": 4,
+        "department_id": 1,
+        "phone_number": "9012345678"
+    },
+    {
+        "name": "Charles Harris",
+        "designation_id": 3,
+        "department_id": 5,
+        "phone_number": "0123456789"
+    },
+    {
+        "name": "Barbara Clark",
+        "designation_id": 5,
+        "department_id": 2,
+        "phone_number": "1234509876"
+    },
+    {
+        "name": "Daniel Lewis",
+        "designation_id": 1,
+        "department_id": 3,
+        "phone_number": "2345612345"
+    },
+    {
+        "name": "Sophia Young",
+        "designation_id": 2,
+        "department_id": 4,
+        "phone_number": "3456723456"
+    },
+    {
+        "name": "Matthew Walker",
+        "designation_id": 3,
+        "department_id": 1,
+        "phone_number": "4567834567"
+    },
+    {
+        "name": "Isabella Allen",
+        "designation_id": 4,
+        "department_id": 5,
+        "phone_number": "5678945678"
+    },
+    {
+        "name": "Ethan Scott",
+        "designation_id": 5,
+        "department_id": 3,
+        "phone_number": "6789056789"
     }
 ]
